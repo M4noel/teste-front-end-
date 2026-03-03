@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Header.scss'
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/Logo.png'
 import shieldIcon from '../../assets/images/icons/CreditCard.png'
 import truckIcon from '../../assets/images/icons/Truck.png'
 import cardIcon from '../../assets/images/icons/ShieldCheck.png'
