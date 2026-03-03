@@ -1,0 +1,101 @@
+.product-carousel {
+  width: min(1240px, calc(100% - 2rem));
+  margin: 1.5rem auto 0;
+  position: relative;
+
+  .slick-list {
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 20px 0 28px;
+  }
+
+  &__slide {
+    padding: 0 9px;
+  }
+
+  &__slide-inner {
+    padding: 6px 0;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: #fff;
+    border: 0;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    &::before {
+      color: #3f3f40;
+      font-weight: 400;
+      font-size: 24px;
+      font-family: inherit;
+      line-height: 1;
+      opacity: 1;
+    }
+  }
+
+  .slick-prev {
+    left: -35px;
+
+    &::before {
+      content: '‹';
+    }
+  }
+
+  .slick-next {
+    right: -35px;
+
+    &::before {
+      content: '›';
+    }
+  }
+}
+
+.product-carousel {
+  .slick-slide {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 960px) {
+  .product-carousel {
+    width: min(1240px, calc(100% - 1rem));
+
+    .slick-prev {
+      left: -10px;
+    }
+
+    .slick-next {
+      right: -10px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .product-carousel {
+    .slick-list {
+      padding: 12px 0;
+    }
+
+    .slick-slide {
+      padding: 0 4px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 26px;
+      height: 26px;
+    }
+
+    .slick-prev {
+      left: -4px;
+    }
+
+    .slick-next {
+      right: -4px;
+    }
+  }
+}

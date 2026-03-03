@@ -1,0 +1,10 @@
+@use './variables' as *;
+
+@mixin container {
+  width: min(1120px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+@mixin font-poppins {
+  font-family: $font-base;
+}

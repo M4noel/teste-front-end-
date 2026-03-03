@@ -1,0 +1,78 @@
+.partners-section {
+  width: min(1240px, calc(100% - 2rem));
+  margin: 0rem auto 0;
+
+  &__grid {
+    display: flex;
+    gap: 13px;
+  }
+
+  &__card {
+    position: relative;
+    min-height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 634px;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.6) 10%,
+      rgba(0, 0, 0, 0.15) 65%
+    );
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    max-width: 210px;
+    padding: 1.4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 40px;
+      line-height: 100%;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 0 32px;
+      font-size: 16px;
+      line-height: 100%;
+      color: #fff;
+      letter-spacing: 0%;
+      font-weight: 400;
+    }
+
+    button {
+      border: 0;
+      border-radius: 6px;
+      background: #F7CA11;
+      color: #271C47;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      width: 145px;
+      height: 48px;
+      letter-spacing: 8%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    &__grid {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

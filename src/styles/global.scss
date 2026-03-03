@@ -1,0 +1,25 @@
+@use './variables' as *;
+@use './mixins' as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  @include font-poppins;
+  background: $color-background;
+  color: $color-text;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.font-poppins {
+  @include font-poppins;
+}
