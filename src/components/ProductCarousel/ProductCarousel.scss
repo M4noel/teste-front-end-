@@ -62,40 +62,53 @@
 
 @media (max-width: 960px) {
   .product-carousel {
-    width: min(1240px, calc(100% - 1rem));
+    width: min(1240px, calc(100% - 1.25rem));
+    margin: 1rem auto 0;
 
     .slick-prev {
-      left: -10px;
+      left: -6px;
     }
 
     .slick-next {
-      right: -10px;
+      right: -6px;
     }
   }
 }
 
 @media (max-width: 700px) {
   .product-carousel {
+    width: calc(100% - 0.9rem);
+
     .slick-list {
       padding: 12px 0;
     }
 
     .slick-slide {
-      padding: 0 4px;
+      padding: 0 2px;
+    }
+
+    .slick-slide > div {
+      display: flex;
+      justify-content: center;
     }
 
     .slick-prev,
     .slick-next {
       width: 26px;
       height: 26px;
+      z-index: 3;
     }
 
     .slick-prev {
-      left: -4px;
+      left: 2px;
     }
 
     .slick-next {
-      right: -4px;
+      right: 2px;
     }
+  }
+
+  .product-card {
+    margin-inline: auto;
   }
 }

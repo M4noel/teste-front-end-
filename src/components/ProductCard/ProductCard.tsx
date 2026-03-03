@@ -52,7 +52,10 @@ export function ProductCard({ product, onClick, className = '' }: ProductCardPro
       <button
         type="button"
         className="product-card__buy-button"
-        onClick={(event) => event.stopPropagation()}
+        onClick={(event) => {
+          event.stopPropagation()
+          onClick?.()
+        }}
       >
         COMPRAR
       </button>
