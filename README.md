@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Teste Tecnico - Vaga Front-end
 
 Este projeto foi desenvolvido como teste tecnico para a vaga de Front-end.
@@ -7,7 +7,6 @@ Este projeto foi desenvolvido como teste tecnico para a vaga de Front-end.
 
 - React
 - TypeScript
-- Vite
 - Sass
 
 ## Como rodar o projeto
@@ -30,26 +29,10 @@ npm run dev
 npm run build
 ```
 
-4. Preview da build:
-
-```bash
-npm run preview
-```
 
 ## Deploy na Vercel
 
-O projeto ja esta configurado para Vercel com:
-
-- fallback de SPA para `index.html`
-- proxy da rota `/api` para a API usada no teste
-
-Passos:
-
-1. Suba o projeto para um repositorio GitHub.
-2. Na Vercel, clique em **Add New Project**.
-3. Selecione o repositorio.
-4. Framework: **Vite** (auto).
-5. Clique em **Deploy**.
+https://teste-front-end-ruby.vercel.app/
 
 =======
 # Teste Econverse: Vaga Desenvolvedor Front-End
